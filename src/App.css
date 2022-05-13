@@ -1,0 +1,431 @@
+.answers {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 90%;
+}
+
+.btn-primary {
+  width: 70%;
+  border: 1px solid #69ade7;
+  background-color: white;
+  color: #141e30 !important;
+}
+.btn-primary:hover {
+  color: white !important;
+  font-weight: bolder;
+}
+.btn-check {
+  background-color: green;
+}
+.btn {
+  padding: 0.3rem 1rem;
+  border-radius: 3px;
+  color: white;
+  font-size: 1rem;
+  height: 7vh;
+}
+.controll {
+  border-radius: 3px;
+  color: white;
+}
+.controll button {
+  background-color: #282c3400;
+  border: 0;
+}
+.controll img {
+  width: 4vw;
+}
+.submit {
+  background-color: #69ade7;
+  font-size: 1rem;
+  color: white;
+  height: 5vh;
+  width: 7vw;
+  border-radius: 3px;
+  border: 0;
+}
+.progres {
+  height: 5vh;
+  border-radius: 3px;
+  width: 10% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #69ade7;
+  color: white;
+  font-weight: bolder;
+}
+.selected {
+  background-color: yellow;
+}
+.p-div {
+  width: 100%;
+}
+
+.subQuiz {
+  border: 1px solid rgba(255, 255, 255, 0.233);
+
+  padding: 1rem;
+}
+.quiz-side {
+  background-color: #141e30;
+  width: 20%;
+  height: 80vh;
+  overflow-y: scroll;
+  color: white;
+}
+.fiex {
+  text-align: center;
+  position: fixed;
+  background-color: #141e30;
+  z-index: 100;
+  width: 20%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.quiz-side button {
+  font-size: 0.8rem;
+}
+
+.take-quiz {
+  text-decoration: none;
+  color: white;
+}
+.action {
+  background-color: #69ade7;
+  border: 0;
+  height: 4vh;
+  border-radius: 3px;
+  width: 5vw;
+}
+
+.question-map {
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.quiz-allquestions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: auto;
+  width: 50%;
+}
+.question {
+  font-weight: bolder;
+
+  width: 70%;
+}
+
+.intro {
+  display: flex;
+  gap: 3rem;
+}
+.instr {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.test {
+  width: 95%;
+}
+.test h2,
+p,
+.dir {
+  color: #69ade7;
+}
+
+.step {
+  width: 25%;
+  padding: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 5px;
+}
+.step h3 {
+  color: #69ade7;
+}
+.step span {
+  color: #333844 !important;
+}
+.steps {
+  display: flex;
+  gap: 1rem;
+}
+.test-know {
+  color: #333844;
+}
+.enjoy {
+  text-align: center;
+}
+.sub {
+  color: #69ade7;
+}
+.quiz-name {
+  color: white;
+  font-weight: bold;
+}
+
+.sign-par {
+  display: flex;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+}
+.login- {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.login- form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 70%;
+}
+.login- form h1 {
+  color: #69ade7;
+  text-align: center;
+}
+.login- p {
+  color: #333844;
+}
+.login- p span {
+  color: #69ade7;
+  font-weight: bolder;
+}
+input[type="email"],
+input[type="text"],
+input[type="password"],
+button {
+  height: 6vh;
+  border-radius: 3px;
+  border: 0;
+
+  text-align: center;
+  color: #33384479;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+input[type="email"],
+input[type="text"],
+input[type="password"],
+button :focus {
+  outline: 0;
+}
+
+.signup-btn {
+  background-color: #69ade7;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.glad {
+  background-color: #69ade7;
+  color: white !important;
+  width: 50%;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.glad p {
+  color: white !important;
+  width: 70%;
+}
+.signup-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.err p {
+  color: red;
+}
+
+.takeQuiz {
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 4rem;
+}
+
+.score {
+  color: white;
+  background-color: #141e30;
+  height: 15vh;
+  width: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+.load {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.load-text {
+  color: #243b55;
+  font-size: 1.2rem;
+}
+
+.loading {
+  border: 8px solid #243b55;
+  border-radius: 50%;
+  border-top: 8px solid white;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.result.correct {
+  border-radius: 5px;
+  border: 1px solid rgba(0, 128, 0, 0.411);
+  color: green;
+  margin-bottom: 1rem;
+  padding: 1rem;
+
+}.result.correct p{
+  color: green;
+}
+.result.wrong {
+
+  border: 1px solid rgba(255, 0, 0, 0.418);
+  color: red;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+.result.wrong p{
+  color: red;
+}
+.res{
+  width: 100%;
+  gap: 1rem !important;
+}
+.result{
+  gap: 1rem !important;
+}
+.true{
+  font-weight: bolder;
+  color: green !important;
+}
+
+
+
+@media (max-width: 480px){
+  .quiz-allquestions{
+    width: 100% !important;
+    
+  }
+  .answers{
+    width: 100%;
+    align-items: center;
+
+  }
+  .controll img{
+    width: 13vw;
+  }
+  .controll button{
+    margin-top: 1rem;
+    height: 8vh;
+  
+  }
+  .answers button{
+    height: 8vh;
+  }
+  .res{
+    width: 90%;
+  }
+  .submit{
+    width: 30vw;
+    height: 6vh;
+  }
+  .nav-sgn{
+    width: 30vw !important;
+  }
+  .steps{
+    display: flex;
+    flex-direction: column;
+  }
+  .step{
+    width: 80%;
+  }
+  .intro{
+    display: flex;
+    flex-direction: column;
+  }
+  .quiz-side{
+    width: 100%;
+  }
+  .action{
+    width: 25vw !important;
+    height: 6vh;
+  }
+  .quiz-side h3{
+    text-align: center;
+  }
+  .instr{
+    width: 100%;
+  }
+  .test{
+    width: 80%;
+  }
+  .sign-par{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .glad{
+    display: none;
+  }
+  .login- form{
+    width: 90%;
+  }
+  .login-{
+    width: 95%;
+  }
+  input[type="email"],
+input[type="text"],
+input[type="password"],
+button {
+  height: 8vh;
+ 
+}
+
+
+
+}
