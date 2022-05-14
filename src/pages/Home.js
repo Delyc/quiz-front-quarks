@@ -7,19 +7,23 @@ function Home() {
   return (
     <div>
       
-           <Navbar />
+           {/*  */}
            <div className='intro'>
-           <div className='quiz-side'>
-               <div className=''>
-               <h3>All quiz categories</h3>
-               </div>
+               <div className='quiz-nav'>
+               <div className='quiz-side'>
        
-        <QuizPage />
+       <div className='quiz-type'>
+       <h3>QUIZ CATEGORIES</h3>
+       </div>
 
-        </div>
-     
-      
-        <div className='instr'>
+<QuizPage />
+
+
+</div>
+<div className='nav-inst'>
+<Navbar />
+
+<div className='instr'>
             <div className='test'>
             <h2>Welcome to the Quiz app</h2>
         <p className='test-know'>Test your knowledge in different web dev technologies</p>
@@ -55,6 +59,15 @@ function Home() {
        
 
         </div>
+</div>
+
+
+
+               </div>
+        
+          
+     
+      
         
      
            </div>

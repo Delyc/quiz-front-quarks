@@ -7,6 +7,7 @@
     height: 8vh;
     width: 9vw;
     border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 button:hover{
     background-color: #69ade7;
@@ -17,6 +18,19 @@ button:hover{
     justify-content: flex-end;
     height: 15vh;
     align-items: center;
+    gap: 1rem;
  
     padding-right: 5rem;
+}
+
+.nav-help{
+    border: 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   
+    color: white;
+    background-color: #69ade7;
+    font-size: 1.3rem;
+    height: 8vh;
+    width: 9vw;
+    border-radius: 10px;
 }

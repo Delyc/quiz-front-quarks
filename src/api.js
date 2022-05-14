@@ -1,5 +1,5 @@
 import axios from "axios";
-const base = "http://localhost:7000";
+const base = "https://quiz-app-back-api.herokuapp.com";
 const axiosBase = axios.create({
   baseURL: base,
   withCredentials: false,

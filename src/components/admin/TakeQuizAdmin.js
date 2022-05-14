@@ -1,4 +1,4 @@
-import { setSelectionRange } from "@testing-library/user-event/dist/utils";
+
 import React, { useEffect, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
 import axiosBase from "../../api";
@@ -131,8 +131,8 @@ function TakeQuizAdmin() {
                 );
               })}
             </div>
-            <button>
-            <Link className="" to={`/edit-qn/${questions._id}`}> edit </Link></button>
+            {/* <button>
+            <Link className="" to={`/edit-qn/${question._id}`}> edit </Link></button> */}
 
             <button onClick={(e) => deleteQn()}>
             delete </button>

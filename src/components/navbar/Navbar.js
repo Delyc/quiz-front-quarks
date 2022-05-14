@@ -8,6 +8,7 @@ export function Navbar() {
         <>
         <div className='nav'>
         <button className='nav-sgn'>Sign up</button>
+        <button className='nav-help'>Help</button>
        
            
         </div>

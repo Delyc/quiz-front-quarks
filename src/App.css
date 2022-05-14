@@ -71,9 +71,21 @@
 .quiz-side {
   background-color: #141e30;
   width: 20%;
-  height: 80vh;
+  height: 100%;
   overflow-y: scroll;
   color: white;
+
+}
+.quiz-nav{
+  display: flex;
+ 
+  width: 100%;
+  justify-content: space-between;
+}
+.nav-inst{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
 }
 .fiex {
   text-align: center;
@@ -86,7 +98,9 @@
 .quiz-side button {
   font-size: 0.8rem;
 }
-
+.quiz-type{
+  text-align: center;
+}
 .take-quiz {
   text-decoration: none;
   color: white;
@@ -126,7 +140,8 @@
   gap: 3rem;
 }
 .instr {
-  width: 70%;
+  
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -277,6 +292,10 @@ button :focus {
   justify-content: center;
   align-items: center;
   width: 100%;
+  
+}
+.load2{
+  height: 60vh;
 }
 .load-text {
   color: #243b55;
@@ -287,6 +306,15 @@ button :focus {
   border: 8px solid #243b55;
   border-radius: 50%;
   border-top: 8px solid white;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+.loadingg {
+  border: 8px solid white;
+  border-radius: 50%;
+  border-top: 8px solid rgba(255, 255, 255, 0);
   width: 50px;
   height: 50px;
   -webkit-animation: spin 2s linear infinite; /* Safari */

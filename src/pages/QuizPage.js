@@ -30,7 +30,10 @@ function QuizPage() {
             })}
           </div>
         ) : (
-          <h1>Loading ......</h1>
+          <div class="load load2">
+            <div class="loadingg"></div>
+            <h3 class="load-text"></h3>
+          </div>
         )}
       </div>
     </div>
