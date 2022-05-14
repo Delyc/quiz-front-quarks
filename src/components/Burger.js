@@ -3,7 +3,7 @@ import Menu from './menu/Menu';
 import burger from '../assets/icons/burger.png'
 
 function Burger() {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(true);
     return (
       <div className="App">
         <span className='' onClick={() => setIsOpen(true)}>
