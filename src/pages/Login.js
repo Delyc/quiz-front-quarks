@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import axios from "../api";
+import { Link } from "react-router-dom";
+import Burger from "../components/Burger";
+
 
 
 export default function Login() {
@@ -42,6 +45,8 @@ export default function Login() {
 
   return (
     <>
+    <Burger />
+    
     
     <div className="signup-parent">
       
@@ -76,7 +81,9 @@ export default function Login() {
       <button className="signup-btn" onClick={(e) => onSubmit(e)} type="submit">
         Submit
       </button>
-      <p>Already have an account? <span>Login</span> </p>
+      <p>Don't have an account? <span><Link className="create-" to="/add-quiz-admin">
+                          Sign up
+                        </Link></span> </p>
     </form>
 
     </div>

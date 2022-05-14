@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import axiosBase from "../api";
 import next from "../assets/icons/next.png";
 import prev from "../assets/icons/prev.png";
+import Burger from "../components/Burger";
 import QuizPage from "./QuizPage";
 
 function TakeQuiz() {
@@ -72,7 +73,10 @@ function TakeQuiz() {
     getQns();
   }, []);
   return (
-    <div className="takeQuiz">
+    <>
+     <Burger />
+     <div className="takeQuiz">
+     
      
       <div className="quiz-allquestions">
         {score && (
@@ -150,7 +154,8 @@ function TakeQuiz() {
           </div>
         )}
       </div>
-    </div>
+    </div></>
+    
   );
 }
 

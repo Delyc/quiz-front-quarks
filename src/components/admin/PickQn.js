@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axiosBase from "../../api";
 import { useParams } from "react-router-dom";
+import Burger from "../Burger";
 
 function PickQn() {
   // State with list of all checked item
@@ -78,23 +79,28 @@ function PickQn() {
   }, []);
 
   return (
-    <div className="app">
-      <div className="checkList">
-        <div className="title">Your CheckList:</div>
-        {questions && (
-          <div className="list-container">
-            {checkList.map((item, index) => (
-              <div key={index}>
-                <input value={item} type="checkbox" onChange={handleCheck} />
-                <span className={isChecked(item)}>{item}</span>
-              </div>
-            ))}
-          </div>
-        )}
-      </div>
+    <div className="app-pick">
+       <Burger />
+       <div className="app ">
+     
+     <div className="checkList">
+       <div className="title-pick"><h3>Your CheckList:</h3></div>
+       {questions && (
+         <div className="list-container">
+           {checkList.map((item, index) => (
+             <div key={index} className="chec-pick">
+               <input  value={item} type="checkbox" onChange={handleCheck} />
+               <span className={isChecked(item)}>{item}</span>
+             </div>
+           ))}
+         </div>
+       )}
+     </div>
 
-      <button onClick={handleSubmit}>{`Add : ${checkedItems.length} to this quiz`}</button>
+     <button className="add-picked" onClick={handleSubmit}>{`Add : ${checkedItems.length} to this quiz`}</button>
+   </div>
     </div>
+   
   );
 }
 

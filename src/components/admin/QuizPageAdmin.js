@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axiosBase from "../../api";
+import Burger from "../Burger";
 import GetQuiz from "./GetQuiz";
 
 function QuizPageAdmin() {
@@ -19,20 +20,25 @@ function QuizPageAdmin() {
     getQns();
   }, []);
   return (
-    <div>
-      <div className="blog-allblogs">
+    <div className="choosequiz">
+      <Burger />
+      <div className="quiz-allquiz-admin">
+        <h3>All AVAILABLE QUIZ</h3>
         {qns ? (
           //   {qns.length===0?(
           //       <div><h1>no question</h1></div>
           //   ):
 
-          <div className="blogs-map">
+          <div className="quizadmin-map">
             {qns.map((question, index) => {
               return <GetQuiz key={index} quiz={question}></GetQuiz>;
             })}
           </div>
         ) : (
-          <h1>Loading ......</h1>
+          <div class="load load2">
+            <div class="loading"></div>
+            <p class="load-text">loading ...</p>
+          </div>
         )}
       </div>
     </div>

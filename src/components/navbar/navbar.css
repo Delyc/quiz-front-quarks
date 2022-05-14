@@ -8,6 +8,15 @@
     width: 9vw;
     border-radius: 10px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    text-decoration: none;
+}
+.nav-sgn-link{
+    text-decoration: none;
+    color: #69ade7;
+}
+.nav-sgn-link:hover{
+  
+    color: white;
 }
 button:hover{
     background-color: #69ade7;

@@ -1,0 +1,116 @@
+.Menu {
+    position: fixed;
+    display: grid;
+    place-items: center;
+    width: 15%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background: #141e30;
+    transform: translate(-100%);
+    transition: all .45s;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.bg{
+ 
+    border: 2px solid #69ace750 ;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   
+}
+.App{
+    padding: 2rem;
+}
+.Menu.open {
+    transform: translate(0);
+}
+
+.Menu > .btn-close {
+    font-size: 30px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.Menu > .Menu-items {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    font-size: 0.8rem;
+}
+.icons-side{
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+    width: 2.2vw;
+}
+.Menu > .Menu-items > a {
+    color: white;
+    border: 2px solid #69ace717;
+    display: flex;
+    
+    align-items: center;
+    height: 9vh;
+    width: 100%;
+    font-weight: bolder;
+    text-decoration: none;
+    position: relative;
+}
+
+
+.Menu > .Menu-items > a::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #ffffff;
+    transform: scaleX(0);
+    transition: all .45s;
+}
+
+
+.Menu > .Menu-items > a:hover::after {
+    transform: scaleX(1);
+}
+
+.Menu.open .Menu-items > a:nth-child(1) {
+    animation: animate ease-in-out;
+    animation-duration: 0.7s;
+}
+
+.Menu.open .Menu-items > a:nth-child(2) {
+    animation: animate ease-in-out;
+    animation-duration: 0.85s;
+}
+
+.Menu.open .Menu-items > a:nth-child(3) {
+    animation: animate ease-in-out;
+    animation-duration: 1s;
+}
+
+.Menu.open .Menu-items > a:nth-child(4) {
+    animation: animate ease-in-out;
+    animation-duration: 1.15s;
+}
+
+.Menu.open .Menu-items > a:nth-child(5) {
+    animation: animate ease-in-out;
+    animation-duration: 1.3s;
+}
+
+
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform:  translateY(90px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

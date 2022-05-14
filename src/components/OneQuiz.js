@@ -9,8 +9,9 @@ const OneQn = ({ quiz }) => {
       <div className="allQuiz">
       
            <div className="subQuiz" ref={qnRef}>
-      <p className="quiz-name">{quiz.name}</p>
-      <div className="Link-buttons">
+             <details>
+               <summary>{quiz.name}</summary>
+               <div className="Link-buttons">
         <button className="action">
           {" "}
           <Link className="take-quiz" to={`/take-quiz/${quiz._id}`}>
@@ -19,6 +20,10 @@ const OneQn = ({ quiz }) => {
         </button>
        
       </div>
+
+             </details>
+      <p className="quiz-name"></p>
+      
     </div>
       </div>
    

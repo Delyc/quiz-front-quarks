@@ -6,8 +6,12 @@
 }
 
 .btn-primary {
-  width: 70%;
-  border: 1px solid #69ade7;
+  width: 100%;
+  word-break: break-all;
+  height: auto !important;
+  border: 1px solid #69ace779;
+  min-height: 10vh;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background-color: white;
   color: #141e30 !important;
 }
@@ -63,29 +67,38 @@
   width: 100%;
 }
 
-.subQuiz {
-  border: 1px solid rgba(255, 255, 255, 0.233);
-
-  padding: 1rem;
-}
-.quiz-side {
-  background-color: #141e30;
-  width: 20%;
+.listOf{
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
-  overflow-y: scroll;
-  color: white;
+  flex-direction: column;
+  position: relative;
+  top: 2rem;
+}
+.listOf h3{
+  color: #69ade7;
+  font-weight: bolder;
+  text-transform: uppercase;
+  width: 70%;
+  
+}
 
+.b-nav{
+  display: flex;
+  justify-content: space-between;
 }
 .quiz-nav{
   display: flex;
  
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
 }
 .nav-inst{
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 70%;
 }
 .fiex {
   text-align: center;
@@ -119,12 +132,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 0 !important;
 }
 .quiz-allquestions {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 
   height: auto;
   width: 50%;
@@ -157,7 +169,7 @@ p,
 }
 
 .step {
-  width: 25%;
+  width: 28%;
   padding: 1rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 5px;
@@ -182,7 +194,7 @@ p,
   color: #69ade7;
 }
 .quiz-name {
-  color: white;
+  color:#141e30;
   font-weight: bold;
 }
 
@@ -217,18 +229,25 @@ p,
 input[type="email"],
 input[type="text"],
 input[type="password"],
+input[type="number"],
 button {
   height: 6vh;
   border-radius: 3px;
   border: 0;
-
   text-align: center;
-  color: #33384479;
+
+ 
+  color: #333844;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+::placeholder{
+  color: #33384444;
+ 
 }
 input[type="email"],
 input[type="text"],
 input[type="password"],
+input[type="number"],
 button :focus {
   outline: 0;
 }
@@ -260,7 +279,7 @@ button :focus {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 70vh;
 }
 .err p {
   color: red;
@@ -272,7 +291,7 @@ button :focus {
   align-items: center;
   justify-content: center;
   position: relative;
-  top: 4rem;
+  
 }
 
 .score {
@@ -371,6 +390,162 @@ button :focus {
   font-weight: bolder;
   color: green !important;
 }
+summary{
+  border: 2px solid #69ace736;
+  height: 5vh;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+ 
+
+}
+details{
+  margin-bottom: 0.5rem;
+}
+
+.create-{
+  text-decoration: none;
+  font-weight: bolder;
+  color: #69ade7;
+  padding: 0.5rem;
+}
+.nb{
+  font-weight: bolder;
+}
+
+
+
+
+.quiz-allquizes{
+
+  color: #141e30 !important;
+  width: 70%;
+
+}
+.quiz-page{
+  display: flex;
+  gap: 8rem;
+}
+/* .allQuiz{
+  background-color: red;
+  gap: 1rem;
+
+} */
+.quiz-map{
+  gap: 1rem;
+ 
+}
+
+.add-quiz-div{
+  display: flex;
+  gap: 8rem;
+
+}
+.addQuiz- form{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.add-quiz- form textarea{
+  height: 20vh;
+  border-radius: 3px;
+  border: 0;
+  border: 2px solid #69ace72a ;
+  border-radius: 5px;
+
+ 
+  color: #33384479;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+.add-quiz- form input{
+
+  border: 2px solid #69ace72a ;
+ 
+
+}
+.add-quiz- form{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.add-quiz- form button{
+  background-color: #69ade7;
+  color: white;
+  font-family: bold;
+  font-size: 1rem;
+}
+.add-par{
+  display: flex;
+  gap: 3rem;
+}
+.add-quiz- h3{
+  text-align: center;
+  color:#69ade7;
+}
+.note{
+  
+  font-weight: bolder;
+}
+.add-question- h1{
+  color: #69ade7;
+}
+
+.choosequiz{
+  display: flex;
+  gap: 8rem;
+}
+
+.quiz-allquiz-admin{
+  width: 100%;
+}
+.quizadmin-map{
+  width: 70%;
+  
+}
+.quiz-allquiz-admin h3{
+  color: #69ade7;
+}
+.action{
+  width: 8vw;
+}
+.app-pick{
+  display: flex;
+  gap: 7rem;
+}
+.checkList{
+  
+  padding: 1rem;
+  width: 80%;
+  position: relative;
+  top: 3rem;
+  
+}
+
+.chec-pick{
+  border: 2px solid #69ace73f;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  min-height: 10vh;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+.title-pick{
+  color: #69ade7;
+
+}
+.add-picked{
+  margin-top: 2rem;
+  background-color: #69ade7;
+  color: white;
+  font-weight: bold;
+  
+}
+/* add question */
+
 
 
 

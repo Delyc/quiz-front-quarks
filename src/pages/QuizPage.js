@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axiosBase from "../api";
+import Burger from "../components/Burger";
 import OneQuiz from "../components/OneQuiz.js";
 
 function QuizPage() {
@@ -19,12 +20,15 @@ function QuizPage() {
     getQns();
   }, []);
   return (
-    <div>
-      <div className="blog-allblogs">
+    <div className="quiz-page">
+      <Burger/>
+      <div className="listOf">
+      <h3>List of available quiz</h3>
+      <div className="quiz-allquizes">
         {qns ? (
           
 
-          <div className="blogs-map">
+          <div className="quiz-map">
             {qns.map((question, index) => {
               return <OneQuiz key={index} quiz={question}></OneQuiz>;
             })}
@@ -36,6 +40,8 @@ function QuizPage() {
           </div>
         )}
       </div>
+      </div>
+     
     </div>
   );
 }

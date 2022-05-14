@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 
 import prev from "../../assets/icons/prev.png"
 import next from "../../assets/icons/next.png"
+import Burger from "../Burger";
 
 
 function TakeQuizAdmin() {
@@ -102,6 +103,7 @@ function TakeQuizAdmin() {
   }, []);
   return (
     <div>
+      <Burger />
       <div className="quiz-allquestions">
           {score && <h1>{score}</h1>}
         {qns ? (

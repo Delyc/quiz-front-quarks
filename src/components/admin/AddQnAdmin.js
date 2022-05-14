@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import axiosBase from '../../api';
+import Burger from '../Burger';
 
 function AddQnAdmin() {
     const [answers, setAnswers] = useState();
@@ -49,16 +50,36 @@ function AddQnAdmin() {
     }
   return (
     <div>
-        <h1>Add question</h1>
+      <Burger />
+      <div className="signup-parent">
+      
+      <div className="add-par">
+      <div className="glad">
+        <h3>INSTRUCTIONS</h3>
+        <p><li>Create questions one by one and provide their answers</li> </p>
+        <p><li>AEnsure answers provided are separated by comma</li> </p>
+        <p><li>Ensure a tru answer provided is correct</li></p>
+      </div>
+  
+      <div className="add-quiz- add-question-">
+ 
+      <h1>Add question</h1>
         <p> {!valid && error}</p>
         <form action="" onSubmit={(e) => handleSubmit(e)}>
             
-        <input type="text" name='question'/>
-        <p>separate answers by comma (,)</p>
-        <textarea name="answers" id="" colsf ="30" rows="10"></textarea>
-        <input type="text" name='trueAnswer' />
-        <button>submit</button>
+        <input type="text" name='question' placeholder='question'/>
+        <p className='note'>N.B: Separate answers by comma (,)</p>
+        <textarea name="answers" id="" colsf ="30" rows="10" placeholder='answers separated by comma(,)'></textarea>
+        <input type="text" name='trueAnswer' placeholder='correct answer here'/>
+        <button>Add question</button>
         </form>
+     
+  
+      </div>
+  
+      </div>
+      </div>
+        
 
 
     </div>
