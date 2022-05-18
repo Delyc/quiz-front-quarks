@@ -45,8 +45,9 @@ export default function Login() {
 
   return (
     <>
+       <div className="sign-bug">
     <Burger />
-    
+    <div className="test-bug">
     
     <div className="signup-parent">
       
@@ -81,7 +82,7 @@ export default function Login() {
       <button className="signup-btn" onClick={(e) => onSubmit(e)} type="submit">
         Submit
       </button>
-      <p>Don't have an account? <span><Link className="create-" to="/add-quiz-admin">
+      <p>Don't have an account? <span><Link className="create-" to="/sign">
                           Sign up
                         </Link></span> </p>
     </form>
@@ -90,8 +91,8 @@ export default function Login() {
 
     </div>
     </div>
-   
-    
+    </div>
+    </div>
  
     </>
     

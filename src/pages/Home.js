@@ -1,19 +1,21 @@
-import React from "react";
+import React, {useState} from "react";
 import { Navbar } from "../components/navbar/Navbar";
 import QuizPage from "./QuizPage";
 import { Link } from "react-router-dom";
 import Burger from "../components/Burger";
 
 function Home() {
+
   return (
-    <div>
-        <div className="b-nav">
+    <div className="par-home">
+      
         <Burger />
-        <Navbar />
-        </div>
+       
+       
         
       {/*  */}
       <div className="intro">
+      <Navbar />
     
         <div className="quiz-nav">
     
@@ -94,7 +96,7 @@ function Home() {
                   </div>
                 </details>
                 <details>
-                  <summary>App quick test without creating account</summary>
+                  <summary>Test app without creating account</summary>
                   <div className="steps">
                     <div className="step">
                       <h3>Step 1: </h3>

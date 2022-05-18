@@ -119,6 +119,10 @@ function TakeQuiz() {
             <div className="answers">
               {qns[active].answers.map((an) => {
                 return (
+               
+                  // <input type="radio" value="" onClick={(e) => recordAnswer(e, an)}>
+                  //   {an}
+                  // </input>
                   <button
                     onClick={(e) => recordAnswer(e, an)}
                     className="btn btn-primary"

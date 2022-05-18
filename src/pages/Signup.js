@@ -54,60 +54,69 @@ export default function Signup() {
   };
   return (
     <>
+    <div className="sign-bug">
     <Burger />
+    <div className="test-bug">
     <div className="signup-parent">
       
-    <div className="sign-par">
-    <div className="glad">
-      <h3>Glad to see you!</h3>
-      <p>Simple things should be simple, complex things should be possible, test your knowledge</p>
+      <div className="sign-par">
+      <div className="glad">
+        <h3>Glad to see you!</h3>
+        <p>Simple things should be simple, complex things should be possible, test your knowledge</p>
+      </div>
+  
+      <div className="login-">
+        <form>
+        <h1 className="title">Signup</h1>
+        <input
+          type="text"
+          value={firstName}
+          onChange={onChangefirstName}
+          name="firstName"
+          placeholder="firstName"
+        />
+        <input
+          type="text"
+          value={secondName}
+          onChange={onChangesecondName}
+          name="secondName"
+          placeholder="secondName"
+        />
+        <input
+          type="email"
+          value={email}
+          onChange={onChangeEmail}
+          name="email"
+          placeholder="Email"
+        />
+  
+        <input
+          type="password"
+          value={password}
+          onChange={onChangePassword}
+          name="password"
+          placeholder="Password"
+        />
+        <button className="signup-btn" onClick={(e) => onSubmit(e)} type="submit">
+          Submit
+        </button>
+        <p>Already have an account? <span><Link className="create-" to="/login">
+                            Login
+                          </Link></span> </p>
+      </form>
+  
+      </div>
+  
+      </div>
+      </div>
+
     </div>
 
-    <div className="login-">
-      <form>
-      <h1 className="title">Signup</h1>
-      <input
-        type="text"
-        value={firstName}
-        onChange={onChangefirstName}
-        name="firstName"
-        placeholder="firstName"
-      />
-      <input
-        type="text"
-        value={secondName}
-        onChange={onChangesecondName}
-        name="secondName"
-        placeholder="secondName"
-      />
-      <input
-        type="email"
-        value={email}
-        onChange={onChangeEmail}
-        name="email"
-        placeholder="Email"
-      />
-
-      <input
-        type="password"
-        value={password}
-        onChange={onChangePassword}
-        name="password"
-        placeholder="Password"
-      />
-      <button className="signup-btn" onClick={(e) => onSubmit(e)} type="submit">
-        Submit
-      </button>
-      <p>Already have an account? <span><Link className="create-" to="/login">
-                          Login
-                        </Link></span> </p>
-    </form>
-
+    
+     
     </div>
-
-    </div>
-    </div>
-   
+  
+  
     
  
     </>

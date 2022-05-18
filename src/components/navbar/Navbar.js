@@ -1,8 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './navbar.css'
 import { Link } from 'react-router-dom'
 
 export function Navbar() {
+    const [show, setShow] = useState(false)
+
     
 
     return (

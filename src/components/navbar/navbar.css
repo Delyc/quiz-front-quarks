@@ -43,3 +43,10 @@ button:hover{
     width: 9vw;
     border-radius: 10px;
 }
+
+@media (max-width: 480px){
+    .nav-help{
+        width: 25vw;
+        border-radius: 3px;
+    }
+}

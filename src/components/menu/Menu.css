@@ -2,7 +2,7 @@
     position: fixed;
     display: grid;
     place-items: center;
-    width: 15%;
+    width: 20%;
     height: 100%;
     left: 0;
     top: 0;
@@ -19,9 +19,9 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
    
 }
-.App{
+/* .App{
     padding: 2rem;
-}
+} */
 .Menu.open {
     transform: translate(0);
 }

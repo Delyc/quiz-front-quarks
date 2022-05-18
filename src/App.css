@@ -93,12 +93,12 @@
   display: flex;
  
   width: 100%;
-  justify-content: center;
+
 }
 .nav-inst{
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 100%;
 }
 .fiex {
   text-align: center;
@@ -232,9 +232,10 @@ input[type="password"],
 input[type="number"],
 button {
   height: 6vh;
-  border-radius: 3px;
+  border-radius: 7px;
   border: 0;
   text-align: center;
+  border: 2px solid #69ace744;
 
  
   color: #333844;
@@ -274,12 +275,23 @@ button :focus {
   color: white !important;
   width: 70%;
 }
+.sign-bug{
+  display: flex;
+
+  justify-content: space-around;
+}
 .signup-parent {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 70vh;
+  height: 100%;
+  position: relative;
+  
+}
+.test-bug{
+
+  height: 100vh;
 }
 .err p {
   color: red;
@@ -544,12 +556,25 @@ details{
   font-weight: bold;
   
 }
+.intro{
+  display: flex;
+  flex-direction: column;
+
+  width: 80%;
+}
+.par-home{
+  display: flex;
+  justify-content: space-between;
+}
 /* add question */
 
 
 
-
 @media (max-width: 480px){
+  .a-isMobile .icons-side{
+   
+    width: 7vw;
+  }
   .quiz-allquestions{
     width: 100% !important;
     
@@ -611,15 +636,23 @@ details{
     display: flex;
     flex-direction: column;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .glad{
     display: none;
   }
   .login- form{
     width: 90%;
+    
   }
   .login-{
-    width: 95%;
+    width: 100%;
+    
+      display: flex;
+  justify-content: center;
+  align-items: center;
   }
   input[type="email"],
 input[type="text"],
@@ -629,6 +662,51 @@ button {
  
 }
 
+
+/* ========signup ===========*/
+.signup-parent{
+  width: 100%;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+
+
+}
+.sign-bug{
+
+
+  display: flex;
+
+
+
+  justify-content: center;
+}
+.listOf{
+  width:100%;
+
+}
+.quiz-page{
+  gap: 0;
+}
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+  .a-isMobile .icons-side{
+   
+    width: 7vw;
+  }
+  .listOf{
+    width: 80%;
+  }
+  .actIon{
+    width: 13vw;
+
+  }
+  .quiz-allquestions{
+    outline:  thin solid red;
+    width:80%;
+    margin-left: 2rem;
+  }
 
 
 }
