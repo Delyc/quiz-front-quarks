@@ -37,7 +37,7 @@ export default function Login() {
     setPassword("");
     try {
       await loginUser(loginData);
-      navigate(to || "/sign");
+      navigate(to || "/");
     } catch (error) {
       setErr(error?.response?.data?.errors || error.message);
     }
